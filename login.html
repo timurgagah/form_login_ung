@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Informasi Akademik UNG || SIAT UNG</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <span id="bg-logo">
+        <img src="logo-ung.png">
+        <h2>SIAT UNG</h2>
+    </span>
+    <div class="centering">
+        <div class="tombol-fungsi">
+            <button type="button" class="btn btn-clicked"
+                onclick="navControl('cekspp', 'loginacc'); tombolInt('loginacc','0','1')">LOGIN</button>
+            <button type="button" class="btn btn-normal"
+                onclick="navControl('loginacc', 'cekspp'); tombolInt('cekspp','1','0')">CEK TAGIHAN SPP</button>
+        </div>
+        <div class="loginacc">
+            <form action="" class="form-login">
+                <div class="one-line"><label>Jenis User: </label>
+                    <select name="jenis_user" id="jenis_user">
+                        <option value="mahasiswa">Mahasiswa</option>
+                        <option value="operator">Operator</option>
+                        <option value="dosen">Dosen</option>
+                    </select>
+                </div>
+                <div class="one-line"><label>Username: </label><input type="text" placeholder="Username"></div>
+                <div class="one-line"><label>Password: </label><input type="password" placeholder="Password"></div>
+                <div class="one-line"><label>Key Code: </label><input type="text" placeholder="Key Code"></div>
+                <div class="one-line"><label>Konfirmasi Key Code: </label><input type="text"
+                        placeholder="Masukkan Key Code">
+                </div>
+                <button class="btn-active">LOGIN</button>
+            </form>
+        </div>
+
+        <div class="cekspp">
+            <form action="" class="form-cekspp">
+                <div class="two-line"><label for="">Nama/Nomor peserta:</label>
+                    <input type="text" name="" id="">
+                    <label><input type="radio" name="mahasiswa" value="mhs-lama">Mahasiswa Lama</label>
+                    <label><input type="radio" name="mahasiswa" value="mhs-baru">Mahasiswa Baru</label>
+                    <button class="btn-active">CEK</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+
+    <div class="support-sys">
+        <h2>Supported By</h2>
+        <img src="logo-bsre.png">
+    </div>
+
+    <footer>
+        <h3>&copy; Universitas Negeri Gorontalo</h3>
+    </footer>
+</body>
+<script src="main.js">
+</script>
+
+</html>
