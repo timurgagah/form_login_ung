@@ -14,7 +14,7 @@ html, body {
     font-family: Arial, sans-serif;
 }
 
-.tombol-fungsi button{
+.tombol-fungsi button {
     margin: 0 10px 0 10px;
 }
 
@@ -27,7 +27,7 @@ html, body {
     color: white;
 }
 
-#bg-logo img{
+#bg-logo img {
     width: 15%;
     background-color: red;
     margin: 10px 0 0 0;
@@ -68,30 +68,45 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 500px;
-    height: 500px;
-    /* border: black 1.5px solid; */
+    width: 450px;
+    height: 450px;
+    border: black 0.5px solid;
     border-radius: 3%;
     margin: 5% 0 0 0;
     background-color: white;
     /* background-color: blue; */
 }
 
-
-.form-login input[type=password], .form-login input[type=text]{
-    font-size: 16px;
-    margin: 10px 0 0 0;
-    width: 204px;   
+.form-login{
+    margin: 15% 0 0 0;
 }
 
-.form-login select{
+.form-login input[type=password], .form-login input[type=text] {
+    font-size: 16px;
+    margin: 10px 0 0 0;
+    width: 204px;
+}
+
+.form-login a {
+    text-align: center;
+    margin: 20px 0 0 0;
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+}
+
+.form-login select {
     font-size: 16px;
     width: 220px;
 }
 
-.form-cekspp input[type=text]{
+.form-cekspp input[type=text] {
     font-size: 16px;
     width: 204px;
+}
+
+.form-cekspp input[type=radio] {
+    margin-right: 10px;
 }
 
 .one-line {
@@ -112,6 +127,7 @@ html, body {
 .two-line {
     display: flex;
     flex-direction: column;
+    font-weight: bold;
 }
 
 .loginacc {
@@ -121,7 +137,7 @@ html, body {
     justify-content: center;
 }
 
-.loginacc form{
+.loginacc form {
     display: inherit;
     flex-direction: column;
 }
